@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+</head>
+<body>
+<div class="header">
+    <h1 class="typewriter">Hi！欢迎来到我的网站！</h1>
+</div>
+
+<div class="card-container">
+    <div class="card" id="a" > <!--id填你想要的卡片id -->
+        <h2>网站1</h2>
+        <p>详细说明</p>
+    </div>
+    <div class="card" id="">
+        <h2>网站2</h2>
+        <p>详细说明</p>
+    </div>
+</div>
+<!--  一言函数  有QPS限制，高访问量建议自建 -->
+<canvas id="trailCanvas"></canvas>
+<div class="hitokoto-box">
+    <a class="hitokoto-text" href="#" target="_blank">加载中...</a>
+    <button class="hitokoto-btn">换一句</button>
+</div>
+
+<script>
+    function initHitokoto() {
+        const box = document.querySelector('.hitokoto-box');
+        const text = document.querySelector('.hitokoto-text');
+        const btn = document.querySelector('.hitokoto-btn');
+
+        async function fetchQuote() {
+            try {
+                text.innerText = "加载中...";
+                const response = await fetch('https://v1.hitokoto.cn');
+                const data = await response.json();
+
+                text.href = `https://hitokoto.cn/?uuid=${data.uuid}`;
+                text.innerText = data.hitokoto;
+
+                if(data.from_who || data.from) {
+                    const source = document.createElement('div');
+                    source.style = "color:#777; margin-top:10px; font-style:italic";
+                    source.innerText = `${data.from_who ? data.from_who : ''}${data.from ? (data.from_who ? ' · ' : '') + data.from : ''}`;
+                    box.appendChild(source);
+                }
+            } catch {
+                text.innerText = "加载失败，点击重试";
+                text.onclick = fetchQuote;
+            }
+        }
+
+        btn.addEventListener('click', function() {
+            const source = box.querySelector('div');
+            if(source) source.remove();
+            fetchQuote();
+        });
+
+        fetchQuote();
+    }
+
+    document.addEventListener('DOMContentLoaded', initHitokoto);
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
