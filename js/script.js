@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cardLinks = {
-        'a': 'https://Baidu.com',
-        // ......
+        'a': 'https://baidu.com',
+        'b': '#',
+        'c': '#',
+        'd': '#'
     };
+
     function initTypewriter() {
         const element = document.querySelector('.typewriter');
-        const text = 'Hi！欢迎来到我的网站！';//替换成你想要的文本
+        const text = '你好，世界！';
         let index = 0;
 
         element.innerHTML = '';
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         type();
     }
+
     document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 400);
         });
     });
+
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.card')) {
             const globalEffect = document.createElement('div');
@@ -59,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 600);
         }
     });
+
     const canvas = document.getElementById('trailCanvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
@@ -107,5 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         drawTrail();
     }
+
     initTypewriter();
 });
