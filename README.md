@@ -2,10 +2,12 @@
 
 # Personal Home Portal (2025 Edition)
 
-<p align="center">
-  <a href="https://github.com/WRD1145/Home/blob/main/docs/README-ZH-CN.md" target="_blank">简体中文</a>
-</p>
+[简体中文](https://github.com/WRD1145/Home/blob/main/docs/README-ZH-CN.md)
 
+[Demo site(Chinese)](www.lihansen.xyz)
+
+> [!CAUTION]
+> It is recommended to use Chinese.
 
 
 A modern personal homepage solution featuring link navigation, inspirational quotes, and visitor statistics. Designed for 2025.

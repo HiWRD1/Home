@@ -1,1 +1,1 @@
-{"last_visit":"2025-07-12","last_month":"2025-07","last_year":"2025","daily":6,"monthly":6,"yearly":6,"total":6}
+{"last_visit":"2025-07-12","last_month":"2025-07","last_year":"2025","daily":9,"monthly":9,"yearly":9,"total":9,"history":{"2025":{"2025-07":{"2025-07-12":1}}}}
