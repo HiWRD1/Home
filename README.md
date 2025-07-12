@@ -7,4 +7,4 @@
 - [x] 一言功能
 - [ ] 在线主页句子排布
 
-Made by HiWRD1 with DeepSeek 
+Made by @WRD1145 with DeepSeek 
