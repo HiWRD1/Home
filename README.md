@@ -1,5 +1,3 @@
-# Optimized README.md
-
 # Personal Home Portal (2025 Edition)
 
 <p align="center">
