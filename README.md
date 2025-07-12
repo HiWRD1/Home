@@ -1,5 +1,3 @@
-# Optimized README.md
-
 # Personal Home Portal (2025 Edition)
 
 [简体中文](https://github.com/WRD1145/Home/blob/main/docs/README-ZH-CN.md)
