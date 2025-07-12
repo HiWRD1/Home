@@ -2,10 +2,10 @@
 
 [English](https://github.com/WRD1145/Home/blob/main/README.md)
 
-[演示站](www.lihansen.xyz)
+[演示站（中文）](www.lihansen.xyz)
 
 > [!CAUTION]
-> 建议中文使用（翻译）
+> 建议中文使用
 
 
 一个现代化的个人主页解决方案，集链接导航、励志名言和访客统计于一体。专为2025年设计。
