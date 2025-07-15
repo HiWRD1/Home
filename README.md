@@ -1,4 +1,4 @@
-# Personal Home Portal (2025 Edition)
+# Personal Home Portal
 
 [简体中文](https://github.com/WRD1145/Home/blob/main/docs/README-ZH-CN.md)
 
@@ -7,6 +7,7 @@
 > [!CAUTION]
 > It is recommended to use Chinese.
 
+![Alt](https://repobeats.axiom.co/api/embed/5c712d5fee47cdf2029d445aee474b3393f60022.svg "Repobeats analytics image")
 
 A modern personal homepage solution featuring link navigation, inspirational quotes, and visitor statistics. Designed for 2025.
 
