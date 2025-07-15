@@ -7,6 +7,7 @@
 > [!CAUTION]
 > 建议中文使用
 
+![Alt](https://repobeats.axiom.co/api/embed/5c712d5fee47cdf2029d445aee474b3393f60022.svg "Repobeats analytics image")
 
 一个现代化的个人主页解决方案，集链接导航、励志名言和访客统计于一体。专为2025年设计。
 
