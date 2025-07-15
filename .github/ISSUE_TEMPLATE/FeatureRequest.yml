@@ -41,7 +41,7 @@ body:
       label: 检查清单 Checklist
       description: 在开始反馈这个问题之前，请先检查： Before you start reporting this issue, please check
       options:
-        - label: 我已将更新到最新版，并已经在[最新issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3A%E6%96%B0%E5%8A%9F%E8%83%BD)查看过。 I have updated to the latest version and have checked the [latest issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3A%E6%96%B0%E5%8A%9F%E8%83%BD).
+        - label: 我已将更新到最新版，并已经在[最新issues](https://github.com/WRD1145/PerHome/issues).
           required: true
         - label: 我已经仔细阅读过选项里的内容，并且知道这个选项不用勾选。 I have read the options carefully and know that this option does not need to be checked.
           required: false
