@@ -1,4 +1,5 @@
 <?php
+// Hello
 // Ensure data directory exists
 if (!is_dir('data')) {
     mkdir('data', 0755, true);
